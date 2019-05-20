@@ -1,11 +1,16 @@
 import React from "react";
 
-function Product() {
+function Product(props) {
   return (
-    <div>
-      <h3>Product</h3>
-      <p>First paragraph</p>
-    </div>
+    <li>
+      <h3>{props.card.header}</h3>
+      <p>{props.card.para}</p>
+      <a href="#" title={props.card.title && "has-title"}>
+        {props.card.link}
+      </a>
+      <button>See more</button>
+      <hr />
+    </li>
   );
 }
 
