@@ -2,6 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import Layout from "./components/Layout";
+import App from "./components/App";
 
-ReactDOM.render(<Layout />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
