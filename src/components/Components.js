@@ -1,9 +1,11 @@
 import React from "react";
 
+import List from "./content/todosListing";
+
 function Components() {
   return (
     <div>
-      <hr />
+      <List />
     </div>
   );
 }
