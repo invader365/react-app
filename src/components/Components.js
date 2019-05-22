@@ -1,11 +1,11 @@
 import React from "react";
 
-import List from "./content/todosListing";
+import TodosList from "./content/todosList";
 
 function Components() {
   return (
     <div>
-      <List />
+      <TodosList />
     </div>
   );
 }

@@ -2,15 +2,20 @@ import React, { Component } from "react";
 
 import todosData from "./todosData";
 
-class List extends Component {
+class TodosList extends Component {
   constructor() {
     super();
+    this.state = {
+      todo: []
+    };
+    this.state.todo = todosData;
   }
+
   render() {
-    const listComponents = todosData.map(item => (
+    const listComponents = this.state.todo.map(item => (
       <li key={item.id}>
         <label>
-          <input type="checkbox" checked={item.completed} />
+          <input type="checkbox" defaultChecked={item.completed} />
           {item.text}
         </label>
       </li>
@@ -20,4 +25,4 @@ class List extends Component {
   }
 }
 
-export default List;
+export default TodosList;
