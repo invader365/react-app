@@ -15,7 +15,11 @@ class TodosList extends Component {
     const listComponents = this.state.todo.map(item => (
       <li key={item.id}>
         <label>
-          <input type="checkbox" defaultChecked={item.completed} />
+          <input
+            type="checkbox"
+            defaultChecked={item.completed}
+            onChange={() => console.log("isChecked!")}
+          />
           {item.text}
         </label>
       </li>
