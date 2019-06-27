@@ -1,15 +1,14 @@
-import React {Component, Fragment} from "react"
+import React, { Component } from "react";
 
 class Main extends Component {
-    render() {
-        return (
-          <Fragment>
-            <h1>Hey ya</h1>
-            <p>Lorem Ipsum Dolor Set</p>
-          </Fragment>
-        )
-    }
-
+  render() {
+    return (
+      <div>
+        <h1>Hey ya</h1>
+        <p>Lorem Ipsum Dolor Set</p>
+      </div>
+    );
+  }
 }
 
-export default Main
+export default Main;
